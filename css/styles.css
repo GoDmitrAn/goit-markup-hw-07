@@ -516,15 +516,15 @@ img {
 }
 /* ***********************************portfolio************************************************ */
 
-.portfolio-list {
+.works-nav {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
-.portfolio-list-item:not(:last-child) {
+.works-nav__item:not(:last-child) {
   margin-right: 8px;
 }
-.portfolio-btn {
+.works-nav__btn {
   color: var(--primary-text-color);
   background-color: var(--secondary-section-color);
 
@@ -544,8 +544,8 @@ img {
     background-color var(--action-duration) var(--action-timing-function),
     box-shadow var(--action-duration) var(--action-timing-function);
 }
-.portfolio-btn:hover,
-.portfolio-btn:focus {
+.works-nav__btn:hover,
+.works-nav__btn:focus {
   color: var(--text-overall-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -556,37 +556,37 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
-.works-list-item {
+.works-list_item {
   /* flex-basis: calc(100% / 3 - 30px); */
   flex-basis: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
   display: flex;
 }
-.works-list-item:nth-child(3n) {
+.works-list_item:nth-child(3n) {
   margin-right: 0;
 }
-.works-list-item:nth-last-child(-n + 3) {
+.works-list_item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-.works-item-link {
+.work-box {
   color: inherit;
   text-decoration: none;
   transition: box-shadow var(--action-duration) var(--action-timing-function);
 }
 
-.works-item-link:hover {
+.work-box:hover {
   box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
     1px 4px 6px rgb(0 0 0 / 16%);
   /* transform: translatey(0); */
 }
-.works-title-container {
+.work-box__title-wrap {
   padding: 20px 24px;
   border-left: 1px solid var(--works-title-border);
   border-right: 1px solid var(--works-title-border);
   border-bottom: 1px solid var(--works-title-border);
 }
-.works-title {
+.work-box__title {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
@@ -594,15 +594,15 @@ img {
   letter-spacing: 0.06em;
   margin-bottom: 4px;
 }
-.works-description {
+.work-box__description {
   font-size: 16px;
   line-height: 1.9;
 }
-.works-img-thumb {
+.work-box__thumb {
   position: relative;
   overflow: hidden;
 }
-.img-thumb-overlay {
+.work-box__overlay {
   position: absolute;
   left: 0;
   top: 0;
@@ -613,12 +613,12 @@ img {
   padding: 63px 24px;
   background-color: var(--works-overlay);
 }
-.thumb-text-overlay {
+.work-box__text-overlay {
   font-size: 18px;
   line-height: 1.55;
   color: var(--text-overall-color);
 }
-.works-item-link:hover .img-thumb-overlay {
+.work-box:hover .work-box__overlay {
   transform: translateY(0);
 }
 /* ---------------------hiiden element---------------- */
