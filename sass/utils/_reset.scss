@@ -1,10 +1,10 @@
 body {
-    background-color: var(--text-overall-color);
-    color: var(--secondary-text-color);
+    background-color: $text-overall-color;
+    color: $secondary-text-color;
 
     font-family: 'Roboto', sans-serif;
-    letter-spacing: 0.03em;
-    font-size: 14px;
+    letter-spacing: $primary-letter-spacing;
+    font-size: $primary-font-size;
 }
 
 .list {
