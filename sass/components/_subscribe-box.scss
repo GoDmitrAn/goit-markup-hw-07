@@ -1,14 +1,13 @@
 
 .subscribe-box {
     margin-left: auto;
-}
-
-.subcribe-box__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--text-overall-color);
-    margin-bottom: 20px;
+    &__title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--text-overall-color);
+            margin-bottom: 20px;
+        }
 }
