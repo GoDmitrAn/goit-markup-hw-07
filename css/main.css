@@ -596,7 +596,7 @@ img {
   outline: none;
   transition: border-color var(--action-duration) var(--action-timing-function);
 }
-.form-inputt:hover, .form-input:focus {
+.form-input:hover, .form-input:focus {
   border-color: var(--accent-color);
   cursor: pointer;
 }
